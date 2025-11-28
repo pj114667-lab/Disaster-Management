@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech for Disaster Management</title>
+
+<style>
+/* ---------- Basic Setup ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(270deg, #caf0f8, #ade8f4, #90e0ef, #48cae4, #00b4d8);
+  background-size: 1000% 1000%;
+  animation: bgFlow 15s ease infinite;
+  color: #023047;
+  scroll-behavior: smooth;
+}
+@keyframes bgFlow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0077b6, #0096c7, #00b4d8);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  animation: fadeInDown 2s ease;
+}
+header p {
+  font-size: 1.2em;
+  animation: fadeInUp 2s ease;
+}
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* ---------- Navbar ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #03045e;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  z-index: 100;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffdd00;
+  transform: scale(1.1);
+}
+
+/* ---------- Content Boxes ---------- */
+section {
+  padding: 40px 20px;
+}
+.content-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  max-width: 900px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.content-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+h2 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0,183,255,0.6);
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  box-shadow: 0 0 15px rgba(0,183,255,1);
+}
+
+/* ---------- Images ---------- */
+img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Contact Form ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+}
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+footer {
+  background-color: #03045e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Tech for Disaster Management</h1>
+  <p>Smart Technology for a Safer Tomorrow</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#tech">Technologies</a>
+  <a href="#tools">Tools</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <div class="content-box">
+    <h2>About</h2>
+    <p>
+      “Tech for Disaster Management” means using technology like sensors, AI, drones, and GIS
+      to predict, prepare, and respond to disasters such as floods, cyclones, and earthquakes.
+    </p>
+    <button onclick="alert('🌍 Stay alert, stay prepared! Every second counts!')">Safety Tip</button>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="content-box">
+    <h2>Key Technologies</h2>
+    <ul>
+      <li><b>Early Warning Systems:</b> Satellites and sensors alert people before disasters.</li>
+      <li><b>GIS & Remote Sensing:</b> Map hazard zones for effective rescue planning.</li>
+      <li><b>Drones:</b> Used for aerial surveys and damage assessment.</li>
+      <li><b>AI & Machine Learning:</b> Predicts disaster risks and supports quick response.</li>
+      <li><b>IoT Devices:</b> Monitor real-time environmental and structural data.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="content-box">
+    <h2>Useful Tools & Websites</h2>
+    <ul>
+      <li><a href="https://ndma.gov.in" target="_blank">NDMA – India</a></li>
+      <li><a href="https://www.gdacs.org/" target="_blank">GDACS – Global Disaster Alert</a></li>
+      <li><a href="https://sachet.ndma.gov.in" target="_blank">Sachet App – Disaster Alerts</a></li>
+      <li><a href="https://www.unisdr.org/" target="_blank">UNDRR – Risk Reduction</a></li>
+      <li><a href="https://www.wfp.org/" target="_blank">PRISM – WFP Platform</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="content-box">
+    <h2>Gallery</h2>
+    <img src="https://cdn.prod.website-files.com/634db544173ac11907b1da8b/635f6b44f5142716559899c0_6350fce58146462d6df9cf40_disaster-relief-drones-featured.jpeg" alt="Drones in disaster relief">
+    <img src="https://garudsurvey.com/wp-content/uploads/2025/07/disaster-drone.jpg" alt="Drone mapping in disaster zones">
+    <img src="https://pub.mdpi-res.com/water/water-16-02636/article_deploy/html/images/water-16-02636-g003.png" alt="AI-based disaster monitoring">
+  </div>
+</section>
+
+<section id="contact">
+  <div class="content-box">
+    <h2>Contact Us</h2>
+    <form onsubmit="return showThanks()">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Field Project – Tech for Disaster Management | Designed by Priya 💙</p>
+</footer>
+
+<script>
+function showThanks() {
+  alert("💌 Thank you for contacting us! We’ll respond soon.");
+  return false;
+}
+</script>
+</body>
+</html>
